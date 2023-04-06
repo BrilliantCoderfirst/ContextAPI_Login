@@ -14,7 +14,7 @@ function App() {
     <>
       <DataTransferContext.Provider value={{ name, setName }}>
         {console.log("-----------Location----------", location.pathname)}
-        {location.pathname == "/ContextAPI_Login.git" ? <LoginPage /> : <HomePage />}
+        {location.pathname == "/ContextAPI_Login" ? <LoginPage /> : <HomePage />}
 
         <Routes>
           <Route path="/home" element={<HomePage />} />
