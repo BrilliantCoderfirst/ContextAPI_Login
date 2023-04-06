@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ContextAPI_Login.git/static/css/main.49a289e1.css",
-    "main.js": "/ContextAPI_Login.git/static/js/main.49726e63.js",
-    "static/media/login_BG.png": "/ContextAPI_Login.git/static/media/login_BG.5490d1e45f6dfceafb8b.png",
-    "index.html": "/ContextAPI_Login.git/index.html",
-    "main.49a289e1.css.map": "/ContextAPI_Login.git/static/css/main.49a289e1.css.map",
-    "main.49726e63.js.map": "/ContextAPI_Login.git/static/js/main.49726e63.js.map"
+    "main.css": "/ContextAPI_Login/static/css/main.49a289e1.css",
+    "main.js": "/ContextAPI_Login/static/js/main.3a7be076.js",
+    "static/media/login_BG.png": "/ContextAPI_Login/static/media/login_BG.5490d1e45f6dfceafb8b.png",
+    "index.html": "/ContextAPI_Login/index.html",
+    "main.49a289e1.css.map": "/ContextAPI_Login/static/css/main.49a289e1.css.map",
+    "main.3a7be076.js.map": "/ContextAPI_Login/static/js/main.3a7be076.js.map"
   },
   "entrypoints": [
     "static/css/main.49a289e1.css",
-    "static/js/main.49726e63.js"
+    "static/js/main.3a7be076.js"
   ]
 }
