@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import "./App.css";
+import LoginPage from "./Pages/LoginPage";
+import HomePage from "./Pages/HomePage";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+
+export const DataTransferContext = createContext();
 
 function App() {
+  const [name, setName] = useState();
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <DataTransferContext.Provider value={{ name, setName }}>
+        {location.pathname == "/" ? <LoginPage /> : <HomePage />}
+
+        <Routes>
+          <Route path="/home" element={<HomePage />} />
+        </Routes>
+      </DataTransferContext.Provider>
+    </>
   );
 }
 
