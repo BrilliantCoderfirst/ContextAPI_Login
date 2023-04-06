@@ -9,7 +9,7 @@ const Navbar = () => {
   const {name} = useContext(DataTransferContext);
 
   function fun() {
-    navigate("/");
+    navigate("/Login_Context_API");
   }
   return (
     <>
